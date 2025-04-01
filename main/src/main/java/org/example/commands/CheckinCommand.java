@@ -38,7 +38,7 @@ public class CheckinCommand extends Command {
         LocalDate checkinDate = LocalDate.now();
 
         System.out.println();
-        System.out.println("Podaj datę zameldowania (enter, jeśli dzisiejsza):");
+        System.out.println("Podaj datę zameldowania w formacie DD-MM-RRRR (enter, jeśli dzisiejsza):");
         String date = scanner.nextLine();
         if (!date.isEmpty()) {
             checkinDate = LocalDate.parse(date);
